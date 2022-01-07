@@ -14,7 +14,7 @@
              * Задаём куку при помощи плагина jQuery Cookie
              */
             $.cookie('timeoutPopup', {
-                expires: 99,
+                expires: 1,
                 path: '/'
             });
         }
