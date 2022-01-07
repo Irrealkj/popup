@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Popup - Timeout Modal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/timeoutModal.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="js/timeoutModal.js"></script>
+  </head>
+  <body>
+    <!-- Timeout -->
+    <div class="timeoutPopup timeoutPopup_hidden" id="timeoutPopup">
+      <div class="timeoutPopup__wrapper">
+        <div class="timeoutPopup__close">&#x1F167;</div>
+        <div class="timeoutPopup__content">
+          <form action="/action_page.php">
+            <div class="containerPopup">
+              <img width="100%" src="https://www.porsolo1euro.com/images/uneuro/porsolo1euro.com/es_ps1e_estrella2_mail.jpg">
+              <h1 style="text-align: center; margin-bottom: -30px; padding-top: 10px; font-size: 1.8rem;">DISFRUTA DE LA OFERTA DE BIENVENIDA</h1>
+            </div>
+            <div class="containerPopup">
+              <input type="text" placeholder="Introduce tu email" name="mail" required>
+              <label>
+                <input type="checkbox" checked="checked" name="subscribe">
+                Tengo más de 18 años y accepto las
+                <a style="color: white; text-decoration: underline;" id="linkCgvNotMobile" style="text-decoration:underline !important" href="#" onclick="$.fancybox({'type':'iframe','width':800,'height':700,'href':'/pp/condiciones-generales-de-venta/porsolo1euro.com/'})" ;="">condiciones generales de venta</a>
+                y la política de privacidad.
+              </label>
+            </div>
+            <div class="containerPopup">
+              <input type="submit" value="Suscríbete">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Time out end -->
+  </body>
+</html>
